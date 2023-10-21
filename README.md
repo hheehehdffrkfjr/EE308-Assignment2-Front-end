@@ -35,8 +35,6 @@ This is a simple calculator web application built using HTML, JavaScript, and jQ
 ![Calculator&History](display.png)
 
 
-## Credits
 
-- This web application was created by [Cai Zhengyang] and is open-source for learning and demonstration purposes.
 
 
