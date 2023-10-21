@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style src="display.css"></style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="./display.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="calculator">
+        <h1>Calculator</h1>
+        <input type="text" id="display">
+        <div class="row">
+            <button value="7" onclick="appendToDisplay('7')">7</button>
+            <button value="8" onclick="appendToDisplay('8')">8</button>
+            <button value="9" onclick="appendToDisplay('9')">9</button>
+            <button value="/" onclick="appendToDisplay('/')">/</button>
+            <button value="SET" onclick="setHistory()">SET</button>
+        </div>
+        <div class="row">
+            <button value="4" onclick="appendToDisplay('4')">4</button>
+            <button value="5" onclick="appendToDisplay('5')">5</button>
+            <button value="6" onclick="appendToDisplay('6')">6</button>
+            <button value="-" onclick="appendToDisplay('-')">-</button>
+            <button value="" onclick="getHistory()">History</button>
+        </div>
+        <div class="row">
+            <button value="1" onclick="appendToDisplay('1')">1</button>
+            <button value="2" onclick="appendToDisplay('2')">2</button>
+            <button value="3" onclick="appendToDisplay('3')">3</button>
+            <button value="+" onclick="appendToDisplay('+')">+</button>
+            <button value="π" onclick="appendToDisplay('π')">π</button>
+        </div>
+        <div class="row">
+            <button value="0" onclick="appendToDisplay('0')">0</button>
+            <button value="." onclick="appendToDisplay('.')">.</button>
+            <button value="=" onclick="getResult()">=</button>
+            <button value="C" onclick="clearAll()">C</button>
+            <button value="Ans" onclick="getlast()">Ans</button>
+        </div>
+        <div class="row">
+            <button value="sin" onclick="appendToDisplay('sin(')">sin()</button>
+            <button value="cos" onclick="appendToDisplay('cos(')">cos()</button>
+            <button value="tan" onclick="appendToDisplay('tan(')">tan()</button>
+            <button value="√" onclick="appendToDisplay('√')">√</button>
+            <button value="ln" onclick="appendToDisplay('ln')">ln()</button>
+
+        </div>
+        <div class="row">
+            <button value="x" onclick="appendToDisplay('*')">x</button>
+            <button value="^" onclick="appendToDisplay('^')">^</button>
+            <button value="log()" onclick="appendToDisplay('log')">log()</button>
+            <button value="！" onclick="appendToDisplay('!')">!</button>
+            <button value="←" onclick="DeleteTheLastChar()">&#8592;</button>
+
+        </div>
+        <div class="row">
+            <button value="(" onclick="appendToDisplay('(')">(</button>
+            <button value=")" onclick="appendToDisplay(')')">)</button>
+            <button value="e" onclick="appendToDisplay('e')">e</button>
+            <button value="mod" onclick="appendToDisplay('mod')">mod</button>
+
+        </div>
+
+
+
+    </div>
+    <div id="history">
+        <h2>History</h2>
+
+        <p>
+            <textarea id="recording" cols="50" rows="20"></textarea>
+        </p>
+
+    </div>
+
+
+    <script type="text/javascript" src="functions.js"></script>
+
+
+</body>
+
+</html>
