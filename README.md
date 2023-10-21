@@ -13,7 +13,7 @@ This is a simple calculator web application built using HTML, JavaScript, and jQ
 - Factorial (!)
 - Modulus (mod)
 - History tracking
-- and more!
+
 
 ## Usage
 
@@ -32,7 +32,7 @@ This is a simple calculator web application built using HTML, JavaScript, and jQ
 
 ## Screenshots
 
-![Calculator&History](calculator-screenshot.png)
+![Calculator&History](display.png)
 
 
 ## Credits
